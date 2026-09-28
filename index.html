@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
-<title>Sample Custody Scanner — PMLB</title>
+<title>Sample Custody Scanner v5 — PMLB</title>
 <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABt0lEQVR42rWTv2tTURTHP+e+F5MmTeuPKtJBIYObCNJB/APEQQRBdHCogroJbo6OgosQcHPqoHQQXBwc3Z38A1xsoYgmbfo0yXv3nOPwos8UEgfxwl3u5fM5l+89R/TZOecfVmpq/CeBzMF8nmACWjGbD0kl0CmBAAZaIAuHZxR3fJxBCAdfIBAEz/o0rj2ldvYKuIGECjYFCYzfPSH/8ApZWP4lEHDFBjs0b3Y5dGF9bnBy5BRW5EjdCaaOFgUW6rTWN5CjHfKPb8G9rOhebS3AHSvGmDqmNsnADFHDQw1+9PDR/nTaMv0jZo5GQ6ITLBrmAR19p//8Oprt0rh4u4RCWsFukKS/z1UVM/sjRBFYWmX35UOQhMb5qyXkENrHQAJxv4eOMrS3hblAVGT7wWrVFSLghmsktFfwYkTtRIelOy+Iw4wv7zc5vnaJbOM+mvWQpHawDyYSSbHBNzzmED4TkpStN11OXr7H4ukz9Pd6ZR+ozWplKUVpk/zrNnuvH9O58Qjc2OneQsdDpNECVeTT3ZX50ygBGw4IjUXcFGKO1FtlPn+fRgEi1NuoKkKAWhOPcXLn/AS53upyrOJxxQAAAABJRU5ErkJggg==">
 <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADkUlEQVR42uWXTWhcVRTHf+e+N5OZTCfWZDItiq0QP6gL01oRK91JhLowCooFKUKhNm4CIioobgq6EUELkhIUuq2CG7upLiKCiyy6KcEiiPWDaluNmplk8t5M7jku3svHJNNOJqlE8cGFx3vc8/E///O/54q+N2hs4ROabql/QrOtDmCrEdD/PQL/MQ7IJt1ZKwTWs89AJDGg2rlfAVyY2LHmPNaBgIE48B5MIVtgjZW2CSgWVZBMLtlnnQQgArqAqZI/PEZw+/1JIOLW7RyMxvkzxBPvI5nu9FsHJLRolvzhMcI9j224+pkDR4m//ghbiEGCJT6Eej0EBEQCdHaa/PDbZAafBL8ALuiQdwl/rF5DEVADseUAWiMggKDVa+SGXqbr4LHEkAtSMnZKQklKpkbib2UAqxEQAd/AFiK6Hn6e/KE3sPociEMy+c01oRp2QwTEYXGN8I69FJ8bw/XtRqu/UR1/FtMFeo5/guspp00gHUuAWTsExDBVDIEgm+yLZ2n8chHUY1EVenYAuiFRao+AeQjzNH6+wPSJfeQOHKH4zDvcMnoWAYLyXcu6sJES2Ho4gCVtEgbUJk7hCiUKj7+2Qko3LsdmaxFwi1E1LVVMDSmUqJ59i9pXHyYWvE/ltMVqCbliqXSbeVr5ur4OkEaa387MmVdxxTK5fU901P/ilkslXQXUaxsOrH7UwDkIc/x5eoTebDeZXXubpVgAVaR7e3LgpGUS56h8O0njjyv07h9ibmIcX6sg2XyTFMvl0dvaa7G4RAUFXK5nmQsimG/gCrfS/8o53La+FHqPn5th8ugAAyMn6d/zAL++uR9XLKWJW4cDifol/fa1v9K0E7JaVCXouxO3rY/pyc/QRkz/waeZOjFM6ZGn2PnoEfzMVVzvLmy+kkr5ygDWe7ybT7MOmoXLZdF6lNQ8CPnu5HGunDuN1mPuGR3H1GONGI3nE7+rOOcWxaH9SoXEr1wewi7qly8SXzpP74OHuHf0FHOXprjv9Y8REcQFzE99ga/8jrlwjV35cWTH5oZCcVg8R3b3IOWXPiUolpp+13+6wNV3h9FoFgnCNS0rP7xQ3uRUmpySGs2S2Xk3PUMvkht4CG1ERN98SeXzD9ComkxDLcY5+f5Y/00Yiw1xAVafR+sRriuZerQ+j8sVkSCDLXLon7oXmHokyOEK+SX1W3w37280Fd+8e4GZTw7KFVL8r78Z/Q3oQ0R87KILfAAAAABJRU5ErkJggg==">
 <link rel="icon" type="image/png" sizes="192x192" href="data:image/png;base64,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">
@@ -126,6 +126,42 @@
   .result-row .v{ font-weight:700; text-align:right; }
   .result-id{ font-family:"SF Mono", Menlo, Consolas, monospace; font-size:17px; font-weight:700; letter-spacing:.03em; margin-bottom:8px; }
 
+  /* --- vessel name dialog --- */
+  .vessel-modal{
+    position:fixed; inset:0; background:rgba(0,0,0,.72); z-index:1200; display:none;
+    align-items:flex-start; justify-content:center;
+    padding:max(70px, env(safe-area-inset-top)) 16px 16px;
+  }
+  .vessel-card{ width:100%; max-width:430px; background:var(--panel); border:1px solid var(--accent); border-radius:14px; padding:18px; }
+  .vessel-title{ font-size:17px; font-weight:800; margin:0 0 6px; }
+  .vessel-sub{ font-size:13px; color:var(--text-dim); line-height:1.45; margin:0 0 14px; }
+  .vessel-sub b{ color:var(--text); font-family:"SF Mono", Menlo, Consolas, monospace; }
+  .result-row .v .link-btn{ padding:0 0 0 8px; font-size:12px; }
+
+  .vessel-field-label{ display:block; font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--text-dim); margin:0 0 5px; }
+  .vessel-card select{
+    width:100%; background-color:#0E1116; border:1px solid var(--panel-border); border-radius:8px; color:var(--text);
+    font-size:17px; padding:12px 40px 12px 12px; outline:none; margin-bottom:14px;
+    -webkit-appearance:none; appearance:none;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' fill='none' stroke='%238B94A3' stroke-width='2'/></svg>");
+    background-repeat:no-repeat; background-position:right 14px center;
+  }
+  .vessel-card select:focus{ border-color:var(--accent); }
+
+  /* --- editing recent scans --- */
+  button.btn:disabled{ opacity:.4; }
+  .btn-danger{ background:transparent; border:1px solid var(--danger); color:var(--danger); }
+  .btn-danger:active{ background:rgba(229,72,77,.15); }
+  .hist-row.selectable{ cursor:pointer; }
+  .hist-row.selected{ background:rgba(242,183,5,.08); }
+  .hist-check{ width:20px; height:20px; border:2px solid var(--panel-border); border-radius:6px; flex:0 0 auto; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:800; color:#1A1500; }
+  .hist-row.selected .hist-check{ background:var(--accent); border-color:var(--accent); }
+  .hist-pill{ display:inline-block; margin-left:6px; font-family:-apple-system, BlinkMacSystemFont, system-ui, sans-serif; font-size:9.5px; font-weight:800; letter-spacing:.04em; text-transform:uppercase; padding:2px 7px; border-radius:20px; background:rgba(76,141,255,.18); color:var(--blue); vertical-align:1px; }
+  .sel-bar{ position:sticky; bottom:8px; margin-top:12px; background:#0E1116; border:1px solid var(--panel-border); border-radius:10px; padding:10px; z-index:5; }
+  .sel-count{ font-size:12px; color:var(--text-dim); margin:0 0 8px; }
+  .sel-actions{ display:flex; gap:8px; }
+  .sel-actions .btn{ flex:1; padding:11px 6px; font-size:13px; }
+
   /* --- history --- */
   .hist-row{
     display:flex; align-items:center; gap:10px; padding:9px 0; border-bottom:1px solid var(--panel-border); font-size:13px;
@@ -161,7 +197,7 @@
   <!-- LOGIN -->
   <section class="view" id="viewLogin">
     <header>
-      <p class="eyebrow">PMLB · Sample Custody</p>
+      <p class="eyebrow">PMLB · Sample Custody · v5</p>
       <h1>Custody Scanner</h1>
       <p class="sub">Scan a sample barcode to log a drop-off or pickup. Enter your name to start.</p>
     </header>
@@ -175,7 +211,7 @@
   <!-- ROLE -->
   <section class="view" id="viewRole" style="display:none;">
     <header>
-      <p class="eyebrow">PMLB · Sample Custody</p>
+      <p class="eyebrow">PMLB · Sample Custody · v5</p>
       <h1>Hi <span id="roleGreetName"></span></h1>
       <p class="sub">What's your role for this scanning session?</p>
     </header>
@@ -217,12 +253,21 @@
       <div class="result-row"><span class="k">Task</span><span class="v" id="resultTask">—</span></div>
       <div class="result-row"><span class="k">Berth</span><span class="v" id="resultBerth">—</span></div>
       <div class="result-row"><span class="k">Location</span><span class="v" id="resultLocation">—</span></div>
+      <div class="result-row"><span class="k">Vessel</span><span class="v"><span id="resultVessel">—</span><button class="link-btn" id="changeVesselBtn" type="button" style="display:none;">Edit</button></span></div>
       <div class="result-row"><span class="k">Time</span><span class="v" id="resultTime">—</span></div>
     </div>
 
     <div class="panel">
-      <p class="panel-title">Recent scans <span id="historyCount">(0)</span></p>
+      <p class="panel-title"><span>Recent scans <span id="historyCount">(0)</span></span><button class="link-btn" id="selectModeBtn" type="button">Select</button></p>
       <div id="historyList"><p class="empty-msg">Nothing logged yet</p></div>
+      <div class="sel-bar" id="selBar" style="display:none;">
+        <p class="sel-count" id="selCount">Tap entries to select</p>
+        <div class="sel-actions">
+          <button class="btn btn-ghost" id="selEditBtn" type="button" disabled>Edit vessel</button>
+          <button class="btn btn-ghost" id="selCombineBtn" type="button" disabled>Combine</button>
+          <button class="btn btn-danger" id="selDeleteBtn" type="button" disabled>Delete</button>
+        </div>
+      </div>
     </div>
 
     <div class="actions">
@@ -231,10 +276,27 @@
     </div>
   </section>
 
-  <footer>Logged locally on this device · nothing is sent anywhere</footer>
+  <footer>Logged locally on this device · nothing is sent anywhere · v5</footer>
 </div>
 
 <div class="toast" id="toast"></div>
+
+<div class="vessel-modal" id="vesselModal">
+  <div class="vessel-card">
+    <p class="vessel-title" id="vesselModalTitle">Enter vessel name</p>
+    <p class="vessel-sub" id="vesselModalSub"></p>
+    <label class="vessel-field-label" for="vesselInput">Vessel name</label>
+    <input type="text" id="vesselInput" placeholder="e.g. DAWN HORIZON" autocapitalize="characters" autocomplete="off">
+    <div id="berthField">
+      <label class="vessel-field-label" for="berthSelect">Berth</label>
+      <select id="berthSelect"></select>
+    </div>
+    <div class="actions">
+      <button class="btn btn-ghost" id="vesselSkipBtn" type="button">Skip</button>
+      <button class="btn btn-primary" id="vesselSaveBtn" type="button" disabled>Save</button>
+    </div>
+  </div>
+</div>
 
 <script>
   const BERTHS = [
@@ -251,6 +313,7 @@
   const state = { username: "", role: "" };
   let log = [];
   try { log = JSON.parse(localStorage.getItem(LOG_KEY) || "[]"); } catch (e) { log = []; }
+  { let changed = false; log.forEach(r => { if (!r.id) { r.id = newId(); changed = true; } }); if (changed) { try { localStorage.setItem(LOG_KEY, JSON.stringify(log)); } catch (e) {} } }
 
   let scanControls = null;
   let lastDecodedText = null;
@@ -271,6 +334,41 @@
   function vibrate(pattern) {
     if (navigator.vibrate) { try { navigator.vibrate(pattern); } catch (e) {} }
   }
+
+  // ---------- scan beep ----------
+  // iOS Safari has no vibration support, so audio is the feedback. The AudioContext can only be
+  // started from a tap, so it is created when the user picks a role, then reused for every scan.
+  let audioCtx = null;
+  function initAudio() {
+    try {
+      if (navigator.audioSession) navigator.audioSession.type = "playback"; // iOS 16.4+: sound plays even with the silent switch on
+      if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      if (audioCtx.state === "suspended") audioCtx.resume();
+    } catch (e) {}
+  }
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden && audioCtx && audioCtx.state === "suspended") { try { audioCtx.resume(); } catch (e) {} }
+  });
+  function beep(freq, durMs, delaySec) {
+    if (!audioCtx) return;
+    try {
+      if (audioCtx.state === "suspended") audioCtx.resume();
+      const t0 = audioCtx.currentTime + (delaySec || 0);
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+      osc.type = "square";
+      osc.frequency.value = freq;
+      gain.gain.setValueAtTime(0.0001, t0);
+      gain.gain.exponentialRampToValueAtTime(0.35, t0 + 0.01);
+      gain.gain.exponentialRampToValueAtTime(0.0001, t0 + durMs / 1000);
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+      osc.start(t0);
+      osc.stop(t0 + durMs / 1000 + 0.02);
+    } catch (e) {}
+  }
+  function beepSuccess() { beep(1800, 130, 0); }                       // short scanner-style chirp
+  function beepError() { beep(420, 160, 0); beep(420, 160, 0.22); }    // two low tones = rejected / duplicate
 
   function saveLog() {
     try { localStorage.setItem(LOG_KEY, JSON.stringify(log)); } catch (e) {}
@@ -336,6 +434,7 @@
   $("roleAnalystBtn").addEventListener("click", () => enterScanMode("Analyst"));
 
   function enterScanMode(role) {
+    initAudio();
     state.role = role;
     $("statusName").textContent = state.username;
     const badge = $("statusBadge");
@@ -348,6 +447,8 @@
   }
 
   $("switchUserBtn").addEventListener("click", () => {
+    if (typeof closeVesselModal === "function") closeVesselModal();
+    if (typeof setSelectMode === "function" && selectMode) setSelectMode(false);
     stopScanner();
     state.username = "";
     state.role = "";
@@ -379,9 +480,115 @@
     if (scanControls) { try { scanControls.stop(); } catch (e) {} scanControls = null; }
   }
 
+  // ---------- vessel + berth, keyed by the 5-digit number after the "S" ----------
+  // The first bag scanned for a new 5-digit number asks for the vessel name and which berth (e.g. E or F) it is
+  // at. Every later bag with the same number picks both up automatically. Kept on this device, separate from the
+  // scan log (Clear log leaves it alone).
+  const VESSEL_KEY = "pmlb_custody_vessels_v1";
+  const COMBO_KEY = "pmlb_custody_combos_v1";
+  let vessels = {};
+  try { vessels = JSON.parse(localStorage.getItem(VESSEL_KEY) || "{}") || {}; } catch (e) { vessels = {}; }
+  let combos = {};
+  try { combos = JSON.parse(localStorage.getItem(COMBO_KEY) || "{}") || {}; } catch (e) { combos = {}; }
+  let currentRecord = null;
+  let vesselModalOpen = false;
+  let vesselTargetNum = "";
+  let vesselTargetLetters = [];
+
+  function saveVessels() { try { localStorage.setItem(VESSEL_KEY, JSON.stringify(vessels)); } catch (e) {} }
+  function saveCombos() { try { localStorage.setItem(COMBO_KEY, JSON.stringify(combos)); } catch (e) {} }
+  function numOfRecord(r) { return (r.sampleId || "").slice(1, 6); }
+  // "E/F berth" -> ["E", "F"]
+  function lettersOfRecord(r) { const m = /^([A-H])\/([A-H])/.exec(r.berth || ""); return m ? [m[1], m[2]] : []; }
+  function vesselEntry(num) {
+    const v = vessels[num];
+    if (!v) return null;
+    return typeof v === "string" ? { vessel: v, berth: "" } : v; // v4 saved just the name
+  }
+  function needsVesselSetup(num, letters) {
+    const e = vesselEntry(num);
+    if (!e || !e.vessel) return true;
+    return letters.length > 0 && (!e.berth || !letters.includes(e.berth));
+  }
+  function berthText(r) { return r.berthLetter ? r.berthLetter + " (" + r.berth + ")" : r.berth; }
+
+  function showVessel(record) {
+    $("resultVessel").textContent = record.vessel || "not set";
+    $("resultBerth").textContent = berthText(record);
+    const b = $("changeVesselBtn");
+    b.style.display = "inline";
+    const complete = record.vessel && (lettersOfRecord(record).length === 0 || record.berthLetter);
+    b.textContent = complete ? "Edit" : "Add";
+  }
+
+  function updateVesselSaveState() {
+    const nameOk = $("vesselInput").value.trim().length > 0;
+    const berthOk = vesselTargetLetters.length === 0 || $("berthSelect").value !== "";
+    $("vesselSaveBtn").disabled = !(nameOk && berthOk);
+  }
+
+  function openVesselModal(record, isEdit) {
+    const num = numOfRecord(record);
+    const letters = lettersOfRecord(record);
+    const entry = vesselEntry(num);
+    vesselTargetNum = num;
+    vesselTargetLetters = letters;
+    vesselModalOpen = true;
+    $("vesselModalTitle").textContent = isEdit ? "Edit vessel & berth" : "New sample number";
+    $("vesselModalSub").innerHTML = "Sample number <b>" + num + "</b> " + (isEdit
+      ? "— changing this updates every bag with this number."
+      : "is new. Enter the vessel name and pick the berth — it's remembered for every bag with this number.");
+    const sel = $("berthSelect");
+    sel.innerHTML = '<option value="">Select berth…</option>' + letters.map(L => '<option value="' + L + '">Berth ' + L + '</option>').join("");
+    $("berthField").style.display = letters.length ? "block" : "none";
+    $("vesselInput").value = entry && entry.vessel ? entry.vessel : "";
+    sel.value = entry && letters.includes(entry.berth) ? entry.berth : "";
+    $("vesselSkipBtn").textContent = isEdit ? "Cancel" : "Skip";
+    updateVesselSaveState();
+    $("vesselModal").style.display = "flex";
+    setTimeout(() => { try { $("vesselInput").focus(); } catch (e) {} }, 60);
+  }
+
+  function closeVesselModal() {
+    vesselModalOpen = false;
+    $("vesselModal").style.display = "none";
+    try { $("vesselInput").blur(); } catch (e) {}
+    lastDecodedTime = Date.now(); // the barcode may still be in front of the camera — don't re-trigger on it
+  }
+
+  function saveVesselName() {
+    const name = $("vesselInput").value.trim().toUpperCase();
+    const berth = vesselTargetLetters.length ? $("berthSelect").value : "";
+    if (!name || !vesselTargetNum || (vesselTargetLetters.length && !berth)) return;
+    const num = vesselTargetNum;
+    vessels[num] = { vessel: name, berth: berth };
+    saveVessels();
+    log.forEach(r => {
+      if (numOfRecord(r) !== num) return;
+      r.vessel = name;
+      if (berth && lettersOfRecord(r).includes(berth)) r.berthLetter = berth;
+    });
+    saveLog();
+    if (currentRecord && numOfRecord(currentRecord) === num) showVessel(currentRecord);
+    renderHistory();
+    closeVesselModal();
+    flashToast("Saved " + name + (berth ? " · berth " + berth : "") + " for " + num, "ok");
+  }
+
+  $("vesselInput").addEventListener("input", updateVesselSaveState);
+  $("berthSelect").addEventListener("change", updateVesselSaveState);
+  $("vesselInput").addEventListener("keydown", (e) => { if (e.key === "Enter" && !$("vesselSaveBtn").disabled) saveVesselName(); });
+  $("vesselSaveBtn").addEventListener("click", saveVesselName);
+  $("vesselSkipBtn").addEventListener("click", closeVesselModal);
+  $("changeVesselBtn").addEventListener("click", () => {
+    if (currentRecord) openVesselModal(currentRecord, !!vesselEntry(numOfRecord(currentRecord)));
+  });
+
   function handleDecoded(text) {
+    if (vesselModalOpen) return; // ignore the camera while the vessel dialog is open
     const now = Date.now();
-    if (text === lastDecodedText && (now - lastDecodedTime) < DEBOUNCE_MS) return;
+    // while the same code stays in view keep pushing the window forward, so it never re-fires until it has left the frame
+    if (text === lastDecodedText && (now - lastDecodedTime) < DEBOUNCE_MS) { lastDecodedTime = now; return; }
     lastDecodedText = text;
     lastDecodedTime = now;
 
@@ -389,6 +596,7 @@
     if (!parsed) {
       flashToast("Not a recognised sample label", "err");
       vibrate([80, 60, 80]);
+      beepError();
       return;
     }
 
@@ -397,10 +605,14 @@
       const secsAgo = Math.max(1, Math.round((now - dupe.tsMs) / 1000));
       flashToast(`Already scanned ${secsAgo}s ago by ${dupe.username} — skipped duplicate`, "err");
       vibrate([80, 60, 80]);
+      beepError();
       return;
     }
 
+    const vEntry = vesselEntry(parsed.num);
+    const vLetters = lettersOfRecord({ berth: parsed.berthTitle });
     const record = {
+      id: newId(),
       tsMs: now,
       date: fmtDate(now),
       time: fmtTime(now),
@@ -412,13 +624,18 @@
       yard: parsed.yard,
       location: parsed.site,
       productType: parsed.suffix,
+      vessel: vEntry ? vEntry.vessel : "",
+      berthLetter: (vEntry && vLetters.includes(vEntry.berth)) ? vEntry.berth : "",
+      combinedWith: combos[parsed.full] || "",
     };
     log.push(record);
     saveLog();
     vibrate(60);
+    beepSuccess();
     flashToast("Logged " + record.sampleId, "ok");
     showResult(record);
     renderHistory();
+    if (needsVesselSetup(parsed.num, vLetters)) openVesselModal(record, false); // first bag for this 5-digit number: ask once
   }
 
   // ---------- result card ----------
@@ -430,6 +647,9 @@
     $("resultBerth").textContent = "—";
     $("resultLocation").textContent = "—";
     $("resultTime").textContent = "—";
+    $("resultVessel").textContent = "—";
+    $("changeVesselBtn").style.display = "none";
+    currentRecord = null;
   }
 
   function showResult(record) {
@@ -440,35 +660,142 @@
     $("resultBerth").textContent = record.berth;
     $("resultLocation").textContent = record.location + " (" + record.yard + ")";
     $("resultTime").textContent = record.time + " · " + record.date;
+    currentRecord = record;
+    showVessel(record);
   }
 
-  // ---------- history ----------
+  // ---------- recent scans + editing ----------
+  let selectMode = false;
+  const selectedIds = new Set();
+
+  function newId() { return Date.now().toString(36) + Math.random().toString(36).slice(2, 7); }
+  function esc(v) { return String(v == null ? "" : v).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
+  function selectedRecords() { return log.filter(r => selectedIds.has(r.id)); }
+
   function renderHistory() {
     $("historyCount").textContent = "(" + log.length + ")";
     const listEl = $("historyList");
+    const recent = [...log].slice(-15).reverse();
+    // a selection can't include entries that have scrolled out of the list
+    const visible = new Set(recent.map(r => r.id));
+    [...selectedIds].forEach(id => { if (!visible.has(id)) selectedIds.delete(id); });
     if (log.length === 0) {
       listEl.innerHTML = '<p class="empty-msg">Nothing logged yet</p>';
-      return;
+    } else {
+      listEl.innerHTML = recent.map(r => {
+        const dotClass = r.role === "Sampler" ? "drop" : "pick";
+        const isSel = selectMode && selectedIds.has(r.id);
+        const extra = (r.vessel ? " · " + esc(r.vessel) : "") + (r.berthLetter ? " · Berth " + esc(r.berthLetter) : "");
+        return `<div class="hist-row${selectMode ? " selectable" : ""}${isSel ? " selected" : ""}" data-id="${esc(r.id)}">
+          ${selectMode ? `<span class="hist-check">${isSel ? "✓" : ""}</span>` : ""}
+          <span class="hist-task ${dotClass}"></span>
+          <div class="hist-main">
+            <div class="hist-id">${esc(r.sampleId)}${r.combinedWith ? '<span class="hist-pill">Combined</span>' : ""}</div>
+            <div class="hist-meta">${esc(r.task)} · ${esc(r.location)} · ${esc(r.username)}${extra}</div>
+            ${r.combinedWith ? `<div class="hist-meta">Combined with ${esc(r.combinedWith)}</div>` : ""}
+          </div>
+          <span class="hist-time">${esc(r.time)}</span>
+        </div>`;
+      }).join("");
     }
-    const recent = [...log].slice(-15).reverse();
-    listEl.innerHTML = recent.map(r => {
-      const dotClass = r.role === "Sampler" ? "drop" : "pick";
-      return `<div class="hist-row">
-        <span class="hist-task ${dotClass}"></span>
-        <div class="hist-main">
-          <div class="hist-id">${r.sampleId}</div>
-          <div class="hist-meta">${r.task} · ${r.location} · ${r.username}</div>
-        </div>
-        <span class="hist-time">${r.time}</span>
-      </div>`;
-    }).join("");
+    updateSelBar();
   }
+
+  function updateSelBar() {
+    $("selBar").style.display = selectMode ? "block" : "none";
+    if (!selectMode) return;
+    const sel = selectedRecords();
+    const n = sel.length;
+    const anyCombined = sel.some(r => r.combinedWith);
+    const allCombined = n >= 1 && sel.every(r => r.combinedWith);
+    const cb = $("selCombineBtn");
+    let msg;
+    if (n === 0) msg = "Tap entries to select";
+    else if (allCombined) msg = n + " selected — already combined";
+    else if (anyCombined) msg = n + " selected — mix of combined and single";
+    else if (n === 1) msg = "1 selected — pick a second bag to combine";
+    else if (n === 2 && sel[0].sampleId === sel[1].sampleId) msg = "Same barcode twice — pick two different bags";
+    else if (n === 2) msg = "2 selected — ready to combine";
+    else msg = n + " selected — combine works on exactly 2";
+    $("selCount").textContent = msg;
+    $("selDeleteBtn").disabled = n === 0;
+    $("selEditBtn").disabled = n !== 1;
+    if (allCombined) { cb.textContent = "Uncombine"; cb.disabled = false; }
+    else { cb.textContent = "Combine"; cb.disabled = !(n === 2 && !anyCombined && sel[0].sampleId !== sel[1].sampleId); }
+  }
+
+  function setSelectMode(on) {
+    selectMode = on;
+    selectedIds.clear();
+    $("selectModeBtn").textContent = on ? "Done" : "Select";
+    renderHistory();
+  }
+  $("selectModeBtn").addEventListener("click", () => setSelectMode(!selectMode));
+  $("historyList").addEventListener("click", (e) => {
+    if (!selectMode) return;
+    const row = e.target.closest(".hist-row");
+    if (!row) return;
+    const id = row.dataset.id;
+    if (selectedIds.has(id)) selectedIds.delete(id); else selectedIds.add(id);
+    renderHistory();
+  });
+
+  // combined samples are linked by barcode, so the link also applies to every other scan of those two bags
+  function combineSamples(a, b) {
+    combos[a] = b; combos[b] = a;
+    saveCombos();
+    log.forEach(r => { if (r.sampleId === a) r.combinedWith = b; else if (r.sampleId === b) r.combinedWith = a; });
+    saveLog();
+  }
+  function uncombineSample(sampleId) {
+    const partner = combos[sampleId];
+    delete combos[sampleId];
+    if (partner) delete combos[partner];
+    saveCombos();
+    log.forEach(r => { if (r.sampleId === sampleId || (partner && r.sampleId === partner)) r.combinedWith = ""; });
+    saveLog();
+  }
+
+  $("selCombineBtn").addEventListener("click", () => {
+    const sel = selectedRecords();
+    if (sel.length >= 1 && sel.every(r => r.combinedWith)) {
+      sel.forEach(r => uncombineSample(r.sampleId));
+      flashToast("Combination removed", "ok");
+    } else if (sel.length === 2 && !sel.some(r => r.combinedWith) && sel[0].sampleId !== sel[1].sampleId) {
+      combineSamples(sel[0].sampleId, sel[1].sampleId);
+      flashToast("Combined " + sel[0].sampleId + " + " + sel[1].sampleId, "ok");
+    } else return;
+    selectedIds.clear();
+    renderHistory();
+  });
+
+  $("selDeleteBtn").addEventListener("click", () => {
+    const sel = selectedRecords();
+    if (!sel.length) return;
+    const what = sel.length === 1 ? sel[0].sampleId + " (" + sel[0].task + ", " + sel[0].time + ")" : sel.length + " entries";
+    if (!confirm("Delete " + what + "?\n\nThis can't be undone.")) return;
+    const ids = new Set(sel.map(r => r.id));
+    const sampleIds = new Set(sel.map(r => r.sampleId));
+    log = log.filter(r => !ids.has(r.id));
+    // if a bag has no scans left, drop its combination too
+    sampleIds.forEach(sid => { if (!log.some(r => r.sampleId === sid) && combos[sid]) uncombineSample(sid); });
+    saveLog();
+    if (currentRecord && ids.has(currentRecord.id)) resetResultCard();
+    selectedIds.clear();
+    renderHistory();
+    flashToast("Deleted " + sel.length + (sel.length === 1 ? " entry" : " entries"), "ok");
+  });
+
+  $("selEditBtn").addEventListener("click", () => {
+    const sel = selectedRecords();
+    if (sel.length === 1) openVesselModal(sel[0], !!vesselEntry(numOfRecord(sel[0])));
+  });
 
   // ---------- CSV export ----------
   $("downloadCsvBtn").addEventListener("click", () => {
     if (log.length === 0) { flashToast("No scans to export yet"); return; }
-    const headers = ["Date","Time","Username","Role","Task","Sample ID","Berth","Yard","Location","Product Type"];
-    const rows = log.map(r => [r.date, r.time, r.username, r.role, r.task, r.sampleId, r.berth, r.yard, r.location, r.productType]);
+    const headers = ["Date","Time","Username","Role","Task","Sample ID","Berth","Yard","Location","Product Type","Vessel","Berth Letter","Combined With"];
+    const rows = log.map(r => [r.date, r.time, r.username, r.role, r.task, r.sampleId, r.berth, r.yard, r.location, r.productType, r.vessel || "", r.berthLetter || "", r.combinedWith || ""]);
     const csv = [headers, ...rows].map(row => row.map(csvEscape).join(",")).join("\r\n");
     const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
     const url = URL.createObjectURL(blob);
@@ -486,6 +813,7 @@
     if (ok) {
       log = [];
       saveLog();
+      if (selectMode) setSelectMode(false);
       renderHistory();
       resetResultCard();
       flashToast("Log cleared", "ok");
